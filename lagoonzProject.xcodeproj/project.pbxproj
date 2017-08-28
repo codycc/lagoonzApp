@@ -7,21 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B3927F71F54801900D2CD87 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3927F61F54801900D2CD87 /* DataService.swift */; };
+		0B3927FA1F54837300D2CD87 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3927F91F54837300D2CD87 /* Constants.swift */; };
+		0B3927FC1F54863500D2CD87 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3927FB1F54863500D2CD87 /* CreateAccountVC.swift */; };
+		0B4414471F547C1D0010C58B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0B4414461F547C1D0010C58B /* GoogleService-Info.plist */; };
 		0B86D7111F546D9F001C2720 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B86D7101F546D9F001C2720 /* AppDelegate.swift */; };
-		0B86D7131F546D9F001C2720 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B86D7121F546D9F001C2720 /* ViewController.swift */; };
+		0B86D7131F546D9F001C2720 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B86D7121F546D9F001C2720 /* LoginVC.swift */; };
 		0B86D7161F546D9F001C2720 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B86D7141F546D9F001C2720 /* Main.storyboard */; };
 		0B86D7181F546D9F001C2720 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B86D7171F546D9F001C2720 /* Assets.xcassets */; };
 		0B86D71B1F546D9F001C2720 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B86D7191F546D9F001C2720 /* LaunchScreen.storyboard */; };
+		0B86D72A1F546F0F001C2720 /* MyPartiesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B86D7291F546F0F001C2720 /* MyPartiesVC.swift */; };
+		0B86D72C1F546F34001C2720 /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B86D72B1F546F34001C2720 /* DashboardVC.swift */; };
+		0B86D72D1F54704E001C2720 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B86D7251F546DF0001C2720 /* SWRevealViewController.m */; };
+		0B86D72F1F54787E001C2720 /* StyledButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B86D72E1F54787E001C2720 /* StyledButton.swift */; };
+		0B86D7311F547898001C2720 /* StyledTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B86D7301F547898001C2720 /* StyledTextField.swift */; };
+		8A98330402FA74450543FA00 /* Pods_lagoonzProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5177AD24F08E99D69C78585D /* Pods_lagoonzProject.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B3927F61F54801900D2CD87 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		0B3927F91F54837300D2CD87 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		0B3927FB1F54863500D2CD87 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
+		0B4414461F547C1D0010C58B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0B86D70D1F546D9F001C2720 /* lagoonzProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lagoonzProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B86D7101F546D9F001C2720 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0B86D7121F546D9F001C2720 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0B86D7121F546D9F001C2720 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		0B86D7151F546D9F001C2720 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0B86D7171F546D9F001C2720 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B86D71A1F546D9F001C2720 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0B86D71C1F546D9F001C2720 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B86D7231F546DEF001C2720 /* lagoonzProject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "lagoonzProject-Bridging-Header.h"; sourceTree = "<group>"; };
+		0B86D7241F546DEF001C2720 /* SWRevealViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		0B86D7251F546DF0001C2720 /* SWRevealViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		0B86D7291F546F0F001C2720 /* MyPartiesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPartiesVC.swift; sourceTree = "<group>"; };
+		0B86D72B1F546F34001C2720 /* DashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardVC.swift; sourceTree = "<group>"; };
+		0B86D72E1F54787E001C2720 /* StyledButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyledButton.swift; sourceTree = "<group>"; };
+		0B86D7301F547898001C2720 /* StyledTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyledTextField.swift; sourceTree = "<group>"; };
+		5177AD24F08E99D69C78585D /* Pods_lagoonzProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_lagoonzProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D828586C456AAA71DEE2DBCF /* Pods-lagoonzProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lagoonzProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-lagoonzProject/Pods-lagoonzProject.release.xcconfig"; sourceTree = "<group>"; };
+		E68D635BEAF978D1D53E0042 /* Pods-lagoonzProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lagoonzProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-lagoonzProject/Pods-lagoonzProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +53,45 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A98330402FA74450543FA00 /* Pods_lagoonzProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0626E3788AC1A0FCD1AAE445 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E68D635BEAF978D1D53E0042 /* Pods-lagoonzProject.debug.xcconfig */,
+				D828586C456AAA71DEE2DBCF /* Pods-lagoonzProject.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		0B3927F21F547E0400D2CD87 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0B3927F61F54801900D2CD87 /* DataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		0B3927F81F54836A00D2CD87 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0B3927F91F54837300D2CD87 /* Constants.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		0B86D7041F546D9F001C2720 = {
 			isa = PBXGroup;
 			children = (
 				0B86D70F1F546D9F001C2720 /* lagoonzProject */,
 				0B86D70E1F546D9F001C2720 /* Products */,
+				0626E3788AC1A0FCD1AAE445 /* Pods */,
+				A0DC185A17D5F28256D5694A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +106,65 @@
 		0B86D70F1F546D9F001C2720 /* lagoonzProject */ = {
 			isa = PBXGroup;
 			children = (
+				0B3927F81F54836A00D2CD87 /* Resources */,
+				0B3927F21F547E0400D2CD87 /* Services */,
+				0B86D7281F546EF7001C2720 /* Model */,
+				0B86D7271F546EF2001C2720 /* View */,
+				0B86D7261F546EED001C2720 /* Controller */,
+				0B86D7221F546DD3001C2720 /* Supporting Files */,
 				0B86D7101F546D9F001C2720 /* AppDelegate.swift */,
-				0B86D7121F546D9F001C2720 /* ViewController.swift */,
 				0B86D7141F546D9F001C2720 /* Main.storyboard */,
 				0B86D7171F546D9F001C2720 /* Assets.xcassets */,
 				0B86D7191F546D9F001C2720 /* LaunchScreen.storyboard */,
 				0B86D71C1F546D9F001C2720 /* Info.plist */,
+				0B4414461F547C1D0010C58B /* GoogleService-Info.plist */,
 			);
 			path = lagoonzProject;
+			sourceTree = "<group>";
+		};
+		0B86D7221F546DD3001C2720 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0B86D7241F546DEF001C2720 /* SWRevealViewController.h */,
+				0B86D7251F546DF0001C2720 /* SWRevealViewController.m */,
+				0B86D7231F546DEF001C2720 /* lagoonzProject-Bridging-Header.h */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0B86D7261F546EED001C2720 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0B86D7121F546D9F001C2720 /* LoginVC.swift */,
+				0B86D7291F546F0F001C2720 /* MyPartiesVC.swift */,
+				0B86D72B1F546F34001C2720 /* DashboardVC.swift */,
+				0B3927FB1F54863500D2CD87 /* CreateAccountVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0B86D7271F546EF2001C2720 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0B86D72E1F54787E001C2720 /* StyledButton.swift */,
+				0B86D7301F547898001C2720 /* StyledTextField.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0B86D7281F546EF7001C2720 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A0DC185A17D5F28256D5694A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5177AD24F08E99D69C78585D /* Pods_lagoonzProject.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +174,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0B86D71F1F546D9F001C2720 /* Build configuration list for PBXNativeTarget "lagoonzProject" */;
 			buildPhases = (
+				822AE4DE2DC72F4CE579BBD8 /* [CP] Check Pods Manifest.lock */,
 				0B86D7091F546D9F001C2720 /* Sources */,
 				0B86D70A1F546D9F001C2720 /* Frameworks */,
 				0B86D70B1F546D9F001C2720 /* Resources */,
+				5BEB741A719695BE34CFECCE /* [CP] Embed Pods Frameworks */,
+				898E3F5AC25A7C337943E97E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +202,7 @@
 				TargetAttributes = {
 					0B86D70C1F546D9F001C2720 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -125,19 +232,76 @@
 			files = (
 				0B86D71B1F546D9F001C2720 /* LaunchScreen.storyboard in Resources */,
 				0B86D7181F546D9F001C2720 /* Assets.xcassets in Resources */,
+				0B4414471F547C1D0010C58B /* GoogleService-Info.plist in Resources */,
 				0B86D7161F546D9F001C2720 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5BEB741A719695BE34CFECCE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-lagoonzProject/Pods-lagoonzProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		822AE4DE2DC72F4CE579BBD8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		898E3F5AC25A7C337943E97E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-lagoonzProject/Pods-lagoonzProject-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0B86D7091F546D9F001C2720 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B86D7131F546D9F001C2720 /* ViewController.swift in Sources */,
+				0B3927F71F54801900D2CD87 /* DataService.swift in Sources */,
+				0B86D72F1F54787E001C2720 /* StyledButton.swift in Sources */,
+				0B86D7131F546D9F001C2720 /* LoginVC.swift in Sources */,
+				0B86D72C1F546F34001C2720 /* DashboardVC.swift in Sources */,
+				0B86D7311F547898001C2720 /* StyledTextField.swift in Sources */,
+				0B86D72D1F54704E001C2720 /* SWRevealViewController.m in Sources */,
 				0B86D7111F546D9F001C2720 /* AppDelegate.swift in Sources */,
+				0B86D72A1F546F0F001C2720 /* MyPartiesVC.swift in Sources */,
+				0B3927FC1F54863500D2CD87 /* CreateAccountVC.swift in Sources */,
+				0B3927FA1F54837300D2CD87 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,14 +436,18 @@
 		};
 		0B86D7201F546D9F001C2720 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E68D635BEAF978D1D53E0042 /* Pods-lagoonzProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G7CYZFGRXM;
 				INFOPLIST_FILE = lagoonzProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.codycondon.lagoonzProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "lagoonzProject/Supporting Files/lagoonzProject-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -287,14 +455,17 @@
 		};
 		0B86D7211F546D9F001C2720 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D828586C456AAA71DEE2DBCF /* Pods-lagoonzProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G7CYZFGRXM;
 				INFOPLIST_FILE = lagoonzProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.codycondon.lagoonzProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "lagoonzProject/Supporting Files/lagoonzProject-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
