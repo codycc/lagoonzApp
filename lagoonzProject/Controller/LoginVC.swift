@@ -50,20 +50,24 @@ class LoginVC: UIViewController, UITextFieldDelegate {
                 }
             })
         }
+
     }
     
     func completeSignIn(id: String, userData: Dictionary<String, String>) {
         //After user has successfully logged in go to dashboard
-       // performSegue(withIdentifier: GO_TO_REVEAL_VC, sender: nil)
+         performSegue(withIdentifier: GO_TO_DASHBOARD_VC_FROM_LOGIN, sender: nil)
         //Creating a firebase user
         DataService.instance.createFirebaseDBUser(uuid: id, userData: userData)
         
         let keychainResult = KeychainWrapper.standard.set(id, forKey: KEY_UID)
-        //print("CODY1: Data saved to keychain \(keychainResult) ")
+        print("CODY1: Data saved to keychain \(keychainResult) ")
         
     }
     
-
+    @IBAction func createAccountBtnTapped(_ sender: Any) {
+        performSegue(withIdentifier: GO_TO_CREATE_ACCOUNT_VC, sender: nil)
+    }
+    
 
 }
 
