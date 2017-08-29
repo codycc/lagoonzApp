@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B1FFB4A1F55E93200A9FD44 /* AttendingPartyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1FFB491F55E93200A9FD44 /* AttendingPartyVC.swift */; };
 		0B3927F71F54801900D2CD87 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3927F61F54801900D2CD87 /* DataService.swift */; };
 		0B3927FA1F54837300D2CD87 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3927F91F54837300D2CD87 /* Constants.swift */; };
 		0B3927FC1F54863500D2CD87 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3927FB1F54863500D2CD87 /* CreateAccountVC.swift */; };
@@ -32,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B1FFB491F55E93200A9FD44 /* AttendingPartyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendingPartyVC.swift; sourceTree = "<group>"; };
 		0B3927F61F54801900D2CD87 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		0B3927F91F54837300D2CD87 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		0B3927FB1F54863500D2CD87 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 				0B3927FB1F54863500D2CD87 /* CreateAccountVC.swift */,
 				0B4645E81F54A81E00AC7DFF /* CreatePartyVC.swift */,
 				0BE888151F5500A000694D0C /* SendPartyRequestVC.swift */,
+				0B1FFB491F55E93200A9FD44 /* AttendingPartyVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B1FFB4A1F55E93200A9FD44 /* AttendingPartyVC.swift in Sources */,
 				0B3927F71F54801900D2CD87 /* DataService.swift in Sources */,
 				0B86D72F1F54787E001C2720 /* StyledButton.swift in Sources */,
 				0B86D7131F546D9F001C2720 /* LoginVC.swift in Sources */,

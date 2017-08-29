@@ -58,23 +58,27 @@ class DashboardVC: UIViewController {
             if let snapshot = snapshot.children.allObjects as? [DataSnapshot] {
                 for snap in snapshot {
                     print( "Snap: \(snap)")
-                    if let partyDict = snap.value as? Dictionary<String, String> {
+                    if let partyDict = snap.value as? Dictionary<String, Any> {
                         let key = snap.key
                         let party = Party(partyKey: key, partyData: partyDict)
                         self.parties.append(party)
                         // this will download and cache images before user reaches photo, making a better user experience
+                        print("\(self.index) here is index ")
                         self.showData()
+                        
                     }
                 }
             }
         })
     }
     
+    
+    
     // index increases, which then grabs new item from array above and shows new info
     func showData() {
         if parties.count > 0 {
-            index += 1
             if ( index < parties.count) {
+                print("\(index) here is the index of the card ")
                 let partyName = parties[index].partyName
                 let partyLocation = parties[index].partyLocation
                 let partyDate = parties[index].partyStartTime
@@ -107,6 +111,18 @@ class DashboardVC: UIViewController {
             
         }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == GO_TO_SEND_PARTY_REQUEST_VC) {
+            let party = parties[index]
+            let SendPartyRequestVC = (segue.destination as! SendPartyRequestVC)
+            SendPartyRequestVC.party = party
+        } else {
+            let party = parties[index]
+            let AttendingPartyVC = (segue.destination as! AttendingPartyVC)
+            AttendingPartyVC.party = party
+        }
+    }
 
     @IBAction func panCardTapped(_ sender: UIPanGestureRecognizer) {
         let card = sender.view!
@@ -131,7 +147,9 @@ class DashboardVC: UIViewController {
                 ratingImageView.alpha = abs(xFromCenter) / view.center.x
         
         if sender.state == UIGestureRecognizerState.ended {
+            print("\(self.index) here is index")
             if card.center.x < 75 {
+                
                 UIView.animate(withDuration: 0.3, animations: {
                     card.center = CGPoint(x: card.center.x, y: card.center.y + 75)
                     card.alpha = 0
@@ -142,9 +160,14 @@ class DashboardVC: UIViewController {
                 }
                 return
             } else if card.center.x > (view.frame.width - 75) {
-                print("index her it is  \(index)")
-                // perform segue
-                //performSegue(withIdentifier: GO_TO_CREATE_OFFER_VC, sender: self)
+                
+                let party = self.parties[index].publicParty
+                
+                if party {
+                   self.performSegue(withIdentifier: GO_TO_ATTENDING_PARTY_VC, sender: nil)
+                } else {
+                   self.performSegue(withIdentifier: GO_TO_SEND_PARTY_REQUEST_VC, sender: nil)
+                }
                 
                 UIView.animate(withDuration: 0.3, animations: {
                     card.center = CGPoint(x: card.center.x + 200, y: card.center.y + 75 )
@@ -153,7 +176,7 @@ class DashboardVC: UIViewController {
                 delay(0.3) {
                     // user has swiped far right so reload a new card
                     self.loadNewCard()
-                    self.performSegue(withIdentifier: GO_TO_SEND_PARTY_REQUEST_VC, sender: nil)
+                    
                 }
                 return
             }
@@ -171,6 +194,7 @@ class DashboardVC: UIViewController {
     
     
     func loadNewCard() {
+        index += 1
         // resetting to initial spot the below l
         self.partyCard.center = self.view.center
         self.ratingImageView.alpha = 0

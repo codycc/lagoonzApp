@@ -14,6 +14,7 @@ let GO_TO_DASHBOARD_VC_FROM_CREATE = "goToDashboardVCfromCreate"
 let GO_TO_DASHBOARD_VC_FROM_LOGIN = "goToDashboardVCfromLogin"
 let GO_TO_CREATE_PARTY_VC = "goToCreatePartyVC"
 let GO_TO_SEND_PARTY_REQUEST_VC = "goToSendPartyRequestVC"
+let GO_TO_ATTENDING_PARTY_VC = "goToAttendingPartyVC"
 
 
 //Colors

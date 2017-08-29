@@ -225,6 +225,16 @@ class CreatePartyVC: UIViewController, UITextFieldDelegate, UITextViewDelegate, 
         dismiss(animated: true, completion: nil)
     }
     
+    @IBAction func segmentedControlToggled(_ sender: UISegmentedControl) {
+        switch partyTypeControl.selectedSegmentIndex {
+        case 0:
+            partyTypeLabel.text = "Public events are open to everyone and will be available for people swipe yes to attend."
+        case 1:
+            partyTypeLabel.text = "Request only events will show up publically, although a person cannot attend unless you accept their request or invite them."
+        default:
+            break
+        }
+    }
     
 
 }

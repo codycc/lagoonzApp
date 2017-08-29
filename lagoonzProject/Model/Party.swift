@@ -19,6 +19,7 @@ class Party {
     private var _partyHost: String!
     private var _publicParty: Bool!
     private var _partyKey: String!
+    private var _pendingRequests: Dictionary<String, Any>!
     
     var partyName: String {
         return _partyName
@@ -56,7 +57,11 @@ class Party {
         return _partyImageUrl
     }
     
-    init(partyName:String, partyDescription: String, partyLocation: String, publicParty: Bool, partyStartTime: String, partyEndTime: String, partyImageUrl: String, partyHost: String, partyKey: String) {
+    var pendingRequests: Dictionary<String, Any> {
+        return _pendingRequests
+    }
+    
+    init(partyName:String, partyDescription: String, partyLocation: String, publicParty: Bool, partyStartTime: String, partyEndTime: String, pendingRequests: Dictionary<String, Any>, partyImageUrl: String, partyHost: String, partyKey: String) {
         self._partyKey = partyKey
         self._partyName = partyName
         self._partyDescription = partyDescription
@@ -66,6 +71,7 @@ class Party {
         self._partyLocation = partyLocation
         self._partyImageUrl = partyImageUrl
         self._partyHost = partyHost
+        self._pendingRequests = pendingRequests
         
     }
     
@@ -104,14 +110,9 @@ class Party {
             self._partyHost = partyHost as! String
         }
         
+        if let pendingRequests = partyData["pendingRequests"] {
+            self._pendingRequests = pendingRequests as! Dictionary<String, Any>
+        }
+        
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
 }

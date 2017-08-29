@@ -43,10 +43,11 @@ class MyPartiesVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
                 self.partiesAttending = []
                 
                 for snap in snapshot {
+                    
                     let partyKey = snap.key
                     let party = DataService.instance.REF_PARTIES.child(partyKey)
                     party.observe(.value, with: { (snapshot) in
-                        if let partyDict = snapshot.value as? Dictionary<String, String> {
+                        if let partyDict = snapshot.value as? Dictionary<String, Any> {
                             let key = snapshot.key
                             let party = Party(partyKey: key, partyData: partyDict)
                             self.partiesAttending.append(party)
@@ -67,24 +68,24 @@ class MyPartiesVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
         user.child("partiesHosting").observe(.value, with: { (snapshot) in
             if let snapshot = snapshot.children.allObjects as? [DataSnapshot] {
                 self.partiesHosting = []
-                
                 for snap in snapshot {
+                    print("\(snap)here is the snap ")
                     let partyKey = snap.key
                     let party = DataService.instance.REF_PARTIES.child(partyKey)
                     party.observe(.value, with: { (snapshot) in
-                        if let partyDict = snapshot.value as? Dictionary<String, String> {
+                        if let partyDict = snapshot.value as? Dictionary<String, Any> {
                             let key = snapshot.key
                             let party = Party(partyKey: key, partyData: partyDict)
                             self.partiesHosting.append(party)
                         }
+                        print("\(self.partiesHosting) here is parties hosting")
                         self.hostingTableView.reloadData()
                     })
-                    
                 }
-                
             }
         })
     }
+    
     
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -119,11 +120,10 @@ class MyPartiesVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
                 cell.configureCell(party: party)
                 print("\(party) here is the party")
                 return cell
-            }
-            else {
+            } else {
                 return PartyAttendingCell()
             }
-        } else  {
+        } else {
             let party = partiesHosting[indexPath.row]
             if let cell = tableView.dequeueReusableCell(withIdentifier: "PartyHostingCell") as? PartyHostingCell {
                 cell.configureCell(party: party)
@@ -139,6 +139,4 @@ class MyPartiesVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
         performSegue(withIdentifier: GO_TO_CREATE_PARTY_VC, sender: nil)
     }
     
-
-
 }
