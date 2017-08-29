@@ -9,9 +9,8 @@
 import UIKit
 
 @IBDesignable
-class StyledTextField: UITextField
-{
-
+class StyledTextField: UITextField {
+    
     @IBInspectable var cornerRadius: CGFloat = 0 {
         didSet {
             layer.cornerRadius = cornerRadius
@@ -37,6 +36,7 @@ class StyledTextField: UITextField
             backgroundColor = bgColor
         }
     }
+    
     
     @IBInspectable var placeholderColor: UIColor? {
         didSet {

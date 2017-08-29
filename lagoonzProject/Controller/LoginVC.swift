@@ -25,7 +25,14 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         passwordField.delegate = self
         
         //NOTIFICATIONS FOR MOVING FRAME UP
-        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        //Checking if keychain exists
+        //Uncomment to test login screen
+        if let _ = KeychainWrapper.standard.string(forKey: KEY_UID) {
+            performSegue(withIdentifier: GO_TO_DASHBOARD_VC_FROM_LOGIN , sender: nil )
+        }
     }
     
     //For keyboard to move view up when typing

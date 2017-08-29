@@ -12,3 +12,9 @@ let KEY_UID = "uid"
 let GO_TO_CREATE_ACCOUNT_VC = "goToCreateAccountVC"
 let GO_TO_DASHBOARD_VC_FROM_CREATE = "goToDashboardVCfromCreate"
 let GO_TO_DASHBOARD_VC_FROM_LOGIN = "goToDashboardVCfromLogin"
+let GO_TO_CREATE_PARTY_VC = "goToCreatePartyVC"
+let GO_TO_SEND_PARTY_REQUEST_VC = "goToSendPartyRequestVC"
+
+
+//Colors
+let SHADOW_GREY: CGFloat = 120 / 255.0

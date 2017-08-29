@@ -10,7 +10,10 @@
 		0B3927F71F54801900D2CD87 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3927F61F54801900D2CD87 /* DataService.swift */; };
 		0B3927FA1F54837300D2CD87 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3927F91F54837300D2CD87 /* Constants.swift */; };
 		0B3927FC1F54863500D2CD87 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3927FB1F54863500D2CD87 /* CreateAccountVC.swift */; };
+		0B3927FE1F549A0100D2CD87 /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3927FD1F549A0100D2CD87 /* RoundedView.swift */; };
 		0B4414471F547C1D0010C58B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0B4414461F547C1D0010C58B /* GoogleService-Info.plist */; };
+		0B4645E91F54A81E00AC7DFF /* CreatePartyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4645E81F54A81E00AC7DFF /* CreatePartyVC.swift */; };
+		0B690F871F54BB3C00C12D08 /* Party.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B690F861F54BB3C00C12D08 /* Party.swift */; };
 		0B86D7111F546D9F001C2720 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B86D7101F546D9F001C2720 /* AppDelegate.swift */; };
 		0B86D7131F546D9F001C2720 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B86D7121F546D9F001C2720 /* LoginVC.swift */; };
 		0B86D7161F546D9F001C2720 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B86D7141F546D9F001C2720 /* Main.storyboard */; };
@@ -21,6 +24,10 @@
 		0B86D72D1F54704E001C2720 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B86D7251F546DF0001C2720 /* SWRevealViewController.m */; };
 		0B86D72F1F54787E001C2720 /* StyledButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B86D72E1F54787E001C2720 /* StyledButton.swift */; };
 		0B86D7311F547898001C2720 /* StyledTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B86D7301F547898001C2720 /* StyledTextField.swift */; };
+		0B9DCDED1F54D37500E1EB66 /* PartyAttendingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9DCDEC1F54D37500E1EB66 /* PartyAttendingCell.swift */; };
+		0B9DCDEF1F54D38300E1EB66 /* PartyHostingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9DCDEE1F54D38300E1EB66 /* PartyHostingCell.swift */; };
+		0B9FEE4F1F54E6D500FE4CE2 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9FEE4E1F54E6D500FE4CE2 /* CircleView.swift */; };
+		0BE888161F5500A000694D0C /* SendPartyRequestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE888151F5500A000694D0C /* SendPartyRequestVC.swift */; };
 		8A98330402FA74450543FA00 /* Pods_lagoonzProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5177AD24F08E99D69C78585D /* Pods_lagoonzProject.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,7 +35,10 @@
 		0B3927F61F54801900D2CD87 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		0B3927F91F54837300D2CD87 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		0B3927FB1F54863500D2CD87 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
+		0B3927FD1F549A0100D2CD87 /* RoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
 		0B4414461F547C1D0010C58B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0B4645E81F54A81E00AC7DFF /* CreatePartyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePartyVC.swift; sourceTree = "<group>"; };
+		0B690F861F54BB3C00C12D08 /* Party.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Party.swift; sourceTree = "<group>"; };
 		0B86D70D1F546D9F001C2720 /* lagoonzProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lagoonzProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B86D7101F546D9F001C2720 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B86D7121F546D9F001C2720 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -43,6 +53,10 @@
 		0B86D72B1F546F34001C2720 /* DashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardVC.swift; sourceTree = "<group>"; };
 		0B86D72E1F54787E001C2720 /* StyledButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyledButton.swift; sourceTree = "<group>"; };
 		0B86D7301F547898001C2720 /* StyledTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyledTextField.swift; sourceTree = "<group>"; };
+		0B9DCDEC1F54D37500E1EB66 /* PartyAttendingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyAttendingCell.swift; sourceTree = "<group>"; };
+		0B9DCDEE1F54D38300E1EB66 /* PartyHostingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyHostingCell.swift; sourceTree = "<group>"; };
+		0B9FEE4E1F54E6D500FE4CE2 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		0BE888151F5500A000694D0C /* SendPartyRequestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendPartyRequestVC.swift; sourceTree = "<group>"; };
 		5177AD24F08E99D69C78585D /* Pods_lagoonzProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_lagoonzProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D828586C456AAA71DEE2DBCF /* Pods-lagoonzProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lagoonzProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-lagoonzProject/Pods-lagoonzProject.release.xcconfig"; sourceTree = "<group>"; };
 		E68D635BEAF978D1D53E0042 /* Pods-lagoonzProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lagoonzProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-lagoonzProject/Pods-lagoonzProject.debug.xcconfig"; sourceTree = "<group>"; };
@@ -139,6 +153,8 @@
 				0B86D7291F546F0F001C2720 /* MyPartiesVC.swift */,
 				0B86D72B1F546F34001C2720 /* DashboardVC.swift */,
 				0B3927FB1F54863500D2CD87 /* CreateAccountVC.swift */,
+				0B4645E81F54A81E00AC7DFF /* CreatePartyVC.swift */,
+				0BE888151F5500A000694D0C /* SendPartyRequestVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -148,6 +164,10 @@
 			children = (
 				0B86D72E1F54787E001C2720 /* StyledButton.swift */,
 				0B86D7301F547898001C2720 /* StyledTextField.swift */,
+				0B3927FD1F549A0100D2CD87 /* RoundedView.swift */,
+				0B9DCDEC1F54D37500E1EB66 /* PartyAttendingCell.swift */,
+				0B9DCDEE1F54D38300E1EB66 /* PartyHostingCell.swift */,
+				0B9FEE4E1F54E6D500FE4CE2 /* CircleView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -155,6 +175,7 @@
 		0B86D7281F546EF7001C2720 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0B690F861F54BB3C00C12D08 /* Party.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -299,9 +320,16 @@
 				0B86D7311F547898001C2720 /* StyledTextField.swift in Sources */,
 				0B86D72D1F54704E001C2720 /* SWRevealViewController.m in Sources */,
 				0B86D7111F546D9F001C2720 /* AppDelegate.swift in Sources */,
+				0BE888161F5500A000694D0C /* SendPartyRequestVC.swift in Sources */,
+				0B4645E91F54A81E00AC7DFF /* CreatePartyVC.swift in Sources */,
+				0B9FEE4F1F54E6D500FE4CE2 /* CircleView.swift in Sources */,
 				0B86D72A1F546F0F001C2720 /* MyPartiesVC.swift in Sources */,
 				0B3927FC1F54863500D2CD87 /* CreateAccountVC.swift in Sources */,
+				0B690F871F54BB3C00C12D08 /* Party.swift in Sources */,
+				0B3927FE1F549A0100D2CD87 /* RoundedView.swift in Sources */,
+				0B9DCDEF1F54D38300E1EB66 /* PartyHostingCell.swift in Sources */,
 				0B3927FA1F54837300D2CD87 /* Constants.swift in Sources */,
+				0B9DCDED1F54D37500E1EB66 /* PartyAttendingCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

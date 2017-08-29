@@ -9,6 +9,7 @@ target 'lagoonzProject' do
   pod 'Firebase/Storage'
   pod 'Firebase/Database'
   pod 'SwiftKeychainWrapper'
+  pod 'Kingfisher', '~> 3.0'
 
   # Pods for lagoonzProject
 
