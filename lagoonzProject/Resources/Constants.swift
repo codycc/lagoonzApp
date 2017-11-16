@@ -15,7 +15,8 @@ let GO_TO_DASHBOARD_VC_FROM_LOGIN = "goToDashboardVCfromLogin"
 let GO_TO_CREATE_PARTY_VC = "goToCreatePartyVC"
 let GO_TO_SEND_PARTY_REQUEST_VC = "goToSendPartyRequestVC"
 let GO_TO_ATTENDING_PARTY_VC = "goToAttendingPartyVC"
-
+let GO_TO_PARTY_VC = "goToPartyVC"
+let GO_TO_PROFILE_FROM_DASHBOARD_VC =  "goToProfileFromDashboardVC"
 
 //Colors
 let SHADOW_GREY: CGFloat = 120 / 255.0

@@ -31,7 +31,8 @@ class CreateAccountVC: UIViewController {
                 } else {
                     print("CODY1: Successfully created account with firebase email ")
                     if let user = user {
-                        let userData = ["provider": user.providerID]
+                        let userData = ["provider": user.providerID,
+                                        "profilePhotoUrl": "gs://lagoonzapp.appspot.com/profile-pics/profilePhoto.jpg"]
                         self.completeSignIn(id: user.uid, userData: userData)
                     }
                 }

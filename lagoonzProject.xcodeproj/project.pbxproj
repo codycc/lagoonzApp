@@ -8,12 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		0B1FFB4A1F55E93200A9FD44 /* AttendingPartyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1FFB491F55E93200A9FD44 /* AttendingPartyVC.swift */; };
+		0B1FFB4C1F560CED00A9FD44 /* PartyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1FFB4B1F560CED00A9FD44 /* PartyVC.swift */; };
+		0B1FFB4E1F5610E500A9FD44 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1FFB4D1F5610E500A9FD44 /* CommentCell.swift */; };
+		0B1FFB501F56113900A9FD44 /* AttendingUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B1FFB4F1F56113900A9FD44 /* AttendingUserCell.swift */; };
 		0B3927F71F54801900D2CD87 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3927F61F54801900D2CD87 /* DataService.swift */; };
 		0B3927FA1F54837300D2CD87 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3927F91F54837300D2CD87 /* Constants.swift */; };
 		0B3927FC1F54863500D2CD87 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3927FB1F54863500D2CD87 /* CreateAccountVC.swift */; };
 		0B3927FE1F549A0100D2CD87 /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B3927FD1F549A0100D2CD87 /* RoundedView.swift */; };
 		0B4414471F547C1D0010C58B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0B4414461F547C1D0010C58B /* GoogleService-Info.plist */; };
 		0B4645E91F54A81E00AC7DFF /* CreatePartyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4645E81F54A81E00AC7DFF /* CreatePartyVC.swift */; };
+		0B4E56661F562DC300D7C0C3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4E56651F562DC300D7C0C3 /* User.swift */; };
+		0B657AFB1F56EC0E00DC55DD /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B657AFA1F56EC0E00DC55DD /* ProfileVC.swift */; };
 		0B690F871F54BB3C00C12D08 /* Party.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B690F861F54BB3C00C12D08 /* Party.swift */; };
 		0B86D7111F546D9F001C2720 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B86D7101F546D9F001C2720 /* AppDelegate.swift */; };
 		0B86D7131F546D9F001C2720 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B86D7121F546D9F001C2720 /* LoginVC.swift */; };
@@ -34,12 +39,17 @@
 
 /* Begin PBXFileReference section */
 		0B1FFB491F55E93200A9FD44 /* AttendingPartyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendingPartyVC.swift; sourceTree = "<group>"; };
+		0B1FFB4B1F560CED00A9FD44 /* PartyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyVC.swift; sourceTree = "<group>"; };
+		0B1FFB4D1F5610E500A9FD44 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		0B1FFB4F1F56113900A9FD44 /* AttendingUserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendingUserCell.swift; sourceTree = "<group>"; };
 		0B3927F61F54801900D2CD87 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		0B3927F91F54837300D2CD87 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		0B3927FB1F54863500D2CD87 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		0B3927FD1F549A0100D2CD87 /* RoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
 		0B4414461F547C1D0010C58B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0B4645E81F54A81E00AC7DFF /* CreatePartyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePartyVC.swift; sourceTree = "<group>"; };
+		0B4E56651F562DC300D7C0C3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		0B657AFA1F56EC0E00DC55DD /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		0B690F861F54BB3C00C12D08 /* Party.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Party.swift; sourceTree = "<group>"; };
 		0B86D70D1F546D9F001C2720 /* lagoonzProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lagoonzProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B86D7101F546D9F001C2720 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +68,7 @@
 		0B9DCDEC1F54D37500E1EB66 /* PartyAttendingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyAttendingCell.swift; sourceTree = "<group>"; };
 		0B9DCDEE1F54D38300E1EB66 /* PartyHostingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyHostingCell.swift; sourceTree = "<group>"; };
 		0B9FEE4E1F54E6D500FE4CE2 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		0BBB81AB1F571AA30093C3B6 /* lagoonzProject.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = lagoonzProject.entitlements; sourceTree = "<group>"; };
 		0BE888151F5500A000694D0C /* SendPartyRequestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendPartyRequestVC.swift; sourceTree = "<group>"; };
 		5177AD24F08E99D69C78585D /* Pods_lagoonzProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_lagoonzProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D828586C456AAA71DEE2DBCF /* Pods-lagoonzProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lagoonzProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-lagoonzProject/Pods-lagoonzProject.release.xcconfig"; sourceTree = "<group>"; };
@@ -122,6 +133,7 @@
 		0B86D70F1F546D9F001C2720 /* lagoonzProject */ = {
 			isa = PBXGroup;
 			children = (
+				0BBB81AB1F571AA30093C3B6 /* lagoonzProject.entitlements */,
 				0B3927F81F54836A00D2CD87 /* Resources */,
 				0B3927F21F547E0400D2CD87 /* Services */,
 				0B86D7281F546EF7001C2720 /* Model */,
@@ -158,6 +170,8 @@
 				0B4645E81F54A81E00AC7DFF /* CreatePartyVC.swift */,
 				0BE888151F5500A000694D0C /* SendPartyRequestVC.swift */,
 				0B1FFB491F55E93200A9FD44 /* AttendingPartyVC.swift */,
+				0B1FFB4B1F560CED00A9FD44 /* PartyVC.swift */,
+				0B657AFA1F56EC0E00DC55DD /* ProfileVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -171,6 +185,8 @@
 				0B9DCDEC1F54D37500E1EB66 /* PartyAttendingCell.swift */,
 				0B9DCDEE1F54D38300E1EB66 /* PartyHostingCell.swift */,
 				0B9FEE4E1F54E6D500FE4CE2 /* CircleView.swift */,
+				0B1FFB4D1F5610E500A9FD44 /* CommentCell.swift */,
+				0B1FFB4F1F56113900A9FD44 /* AttendingUserCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -179,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				0B690F861F54BB3C00C12D08 /* Party.swift */,
+				0B4E56651F562DC300D7C0C3 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -228,6 +245,11 @@
 						CreatedOnToolsVersion = 9.0;
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -317,6 +339,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B1FFB4A1F55E93200A9FD44 /* AttendingPartyVC.swift in Sources */,
+				0B657AFB1F56EC0E00DC55DD /* ProfileVC.swift in Sources */,
 				0B3927F71F54801900D2CD87 /* DataService.swift in Sources */,
 				0B86D72F1F54787E001C2720 /* StyledButton.swift in Sources */,
 				0B86D7131F546D9F001C2720 /* LoginVC.swift in Sources */,
@@ -326,11 +349,15 @@
 				0B86D7111F546D9F001C2720 /* AppDelegate.swift in Sources */,
 				0BE888161F5500A000694D0C /* SendPartyRequestVC.swift in Sources */,
 				0B4645E91F54A81E00AC7DFF /* CreatePartyVC.swift in Sources */,
+				0B4E56661F562DC300D7C0C3 /* User.swift in Sources */,
+				0B1FFB501F56113900A9FD44 /* AttendingUserCell.swift in Sources */,
 				0B9FEE4F1F54E6D500FE4CE2 /* CircleView.swift in Sources */,
 				0B86D72A1F546F0F001C2720 /* MyPartiesVC.swift in Sources */,
 				0B3927FC1F54863500D2CD87 /* CreateAccountVC.swift in Sources */,
 				0B690F871F54BB3C00C12D08 /* Party.swift in Sources */,
 				0B3927FE1F549A0100D2CD87 /* RoundedView.swift in Sources */,
+				0B1FFB4E1F5610E500A9FD44 /* CommentCell.swift in Sources */,
+				0B1FFB4C1F560CED00A9FD44 /* PartyVC.swift in Sources */,
 				0B9DCDEF1F54D38300E1EB66 /* PartyHostingCell.swift in Sources */,
 				0B3927FA1F54837300D2CD87 /* Constants.swift in Sources */,
 				0B9DCDED1F54D37500E1EB66 /* PartyAttendingCell.swift in Sources */,
@@ -472,6 +499,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = lagoonzProject/lagoonzProject.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G7CYZFGRXM;
 				INFOPLIST_FILE = lagoonzProject/Info.plist;
@@ -491,6 +519,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = lagoonzProject/lagoonzProject.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G7CYZFGRXM;
 				INFOPLIST_FILE = lagoonzProject/Info.plist;

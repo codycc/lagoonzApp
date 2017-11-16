@@ -17,6 +17,7 @@ class MyPartiesVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
     
     var partiesAttending = [Party]()
     var partiesHosting = [Party]()
+    var selectedParty: Party!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,9 +42,7 @@ class MyPartiesVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
         user.child("partiesAttending").observe(.value, with: { (snapshot) in
             if let snapshot = snapshot.children.allObjects as? [DataSnapshot] {
                 self.partiesAttending = []
-                
                 for snap in snapshot {
-                    
                     let partyKey = snap.key
                     let party = DataService.instance.REF_PARTIES.child(partyKey)
                     party.observe(.value, with: { (snapshot) in
@@ -87,6 +86,30 @@ class MyPartiesVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
     }
     
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "goToPartyVC") {
+            let destination = segue.destination as! PartyVC
+            destination.party = selectedParty
+        }
+
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //checking  what tableview is being selected, this will use that to index out of corresponding array 
+        if tableView == self.attendingTableView {
+            
+            selectedParty = self.partiesAttending[indexPath.row]
+            self.performSegue(withIdentifier: GO_TO_PARTY_VC, sender: self)
+            
+            //deselect the row for better user experience
+            tableView.deselectRow(at: indexPath, animated: true)
+        } else {
+            selectedParty = self.partiesHosting[indexPath.row]
+            self.performSegue(withIdentifier: GO_TO_PARTY_VC, sender: self)
+            //deselect the row for better user experience
+            tableView.deselectRow(at: indexPath, animated: true)
+        }
+    }
     
     func numberOfSections(in tableView: UITableView) -> Int {
          print("number of sections table view is being called ")
@@ -113,12 +136,10 @@ class MyPartiesVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        print("cell index path table view is being called ")
         if tableView == self.attendingTableView {
             let party = partiesAttending[indexPath.row]
             if let cell = tableView.dequeueReusableCell(withIdentifier: "PartyAttendingCell") as? PartyAttendingCell {
                 cell.configureCell(party: party)
-                print("\(party) here is the party")
                 return cell
             } else {
                 return PartyAttendingCell()

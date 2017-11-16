@@ -33,6 +33,7 @@ class SendPartyRequestVC: UIViewController {
     
 
     @IBAction func sendPartyRequestTapped(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
         let partyKey = party.partyKey
         let userKey = DataService.instance.REF_CURRENT_USER.key
         DataService.instance.REF_PARTIES.child(partyKey).child("pendingRequests").child(userKey).setValue(true)

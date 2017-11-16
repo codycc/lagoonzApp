@@ -9,6 +9,9 @@
 import UIKit
 import Firebase
 import SwiftKeychainWrapper
+import FBSDKCoreKit
+import FBSDKLoginKit
+
 
 class LoginVC: UIViewController, UITextFieldDelegate {
 
@@ -19,6 +22,7 @@ class LoginVC: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         
         // delegates
         emailField.delegate = self
@@ -40,27 +44,75 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         self.view.endEditing(true)
         return false
     }
-
-    @IBAction func signInBtnTapped(_ sender: Any) {
-        if let email = emailField.text, let password = passwordField.text {
-            Auth.auth().signIn(withEmail: email, password: password, completion: { (user, error) in
-                if error == nil {
-                    print("CODY1: you have successfully signed in ")
-                    //Pass user to set keychain function
-                    if let user = user {
-                        let userData = ["provider": user.providerID]
-                        self.completeSignIn(id: user.uid, userData: userData)
+    
+    @IBAction func fbButtonTapped(_ sender: Any) {
+        let facebookLogin = FBSDKLoginManager()
+        
+        facebookLogin.logIn(withReadPermissions: ["email","public_profile"], from: self) { (result, error) in
+            if error != nil {
+                print("CODY!: UNABLE TO AUTHENTICATE WITH FACBEOOK - \(String(describing: error)) ")
+            } else if result?.isCancelled == true {
+                print("cody: user cancelled fabceook authentication")
+            } else {
+                print("cody: Successfully authenticated with facbeook ")
+                let credential = FacebookAuthProvider.credential(withAccessToken: FBSDKAccessToken.current().tokenString)
+                
+                let graphRequest : FBSDKGraphRequest = FBSDKGraphRequest(graphPath: "me", parameters: ["fields": "email, name, age_range, gender, picture.width(500).height(500)"])
+                graphRequest.start(completionHandler: { (connection, result, error) in
+                    if ((error) != nil) {
+                        print("Error: \(String(describing: error))")
+                    } else if error == nil {
+                        let resultDict = result as? Dictionary<String, AnyObject>
+                        print("\(resultDict)")
+                        if resultDict != nil {
+                            let id = resultDict!["id"] as! String
+                            let email = resultDict!["email"] as! String
+                            let name = resultDict!["name"] as! String
+                            let picture = resultDict!["picture"] as! Dictionary<String, Any>
+                            let pictureData = picture["data"] as! Dictionary<String, Any>
+                            let pictureUrl = pictureData["url"] as! String
+                            
+                            let age_range = resultDict!["age_range"] as! Dictionary<String, Any>
+                            let age_group = age_range["min"] as! Int
+                        
+                            
+                            let userDict: Dictionary<String, Any> = [
+                            "fbID": id,
+                            "email": email,
+                            "name": name,
+                            "profilePhotoUrl": pictureUrl,
+                            "age": age_group]
+                            
+                            self.firebaseAuth(credential, userDict)
+                        } else {
+                            print("Result dictionary is nil\(String(describing: error))")
+                        }
+                        
+                        
                     }
-                    
-                } else {
-                    print("CODY1: Something came up and signin was unsuccessful")
-                }
-            })
-        }
+                })
 
+            }
+        }
+    }
+    func firebaseAuth(_ credential: AuthCredential, _ fbUserInfo: Dictionary<String, Any>) {
+        Auth.auth().signIn(with: credential) { (user, error) in
+            if error != nil {
+                print("CODY: Unable to authenticate with firebase -\(String(describing: error))")
+            } else {
+                print("CODY: Successfully authenticated with firebase ")
+                
+                //creating firebase db user
+                if let user = user {
+                    self.completeSignIn(id: user.uid, userData: fbUserInfo)
+                }
+                
+            }
+        }
     }
     
-    func completeSignIn(id: String, userData: Dictionary<String, String>) {
+    func completeSignIn(id: String, userData: Dictionary<String,Any>) {
+        print("\(userData) here IS THE USER DATA ")
         //After user has successfully logged in go to dashboard
          performSegue(withIdentifier: GO_TO_DASHBOARD_VC_FROM_LOGIN, sender: nil)
         //Creating a firebase user

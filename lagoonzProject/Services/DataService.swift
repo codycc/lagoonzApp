@@ -52,7 +52,7 @@ class DataService {
     
     
     //Creating a new user in the database
-    func createFirebaseDBUser(uuid: String, userData: Dictionary<String, String>) {
+    func createFirebaseDBUser(uuid: String, userData: Dictionary<String, Any>) {
         //Creating the user using the uid
         REF_USERS.child(uuid).updateChildValues(userData)
     }

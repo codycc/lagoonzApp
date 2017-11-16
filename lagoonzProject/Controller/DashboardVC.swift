@@ -117,10 +117,13 @@ class DashboardVC: UIViewController {
             let party = parties[index]
             let SendPartyRequestVC = (segue.destination as! SendPartyRequestVC)
             SendPartyRequestVC.party = party
-        } else {
+        } else if (segue.identifier == GO_TO_ATTENDING_PARTY_VC) {
             let party = parties[index]
             let AttendingPartyVC = (segue.destination as! AttendingPartyVC)
             AttendingPartyVC.party = party
+        } else if (segue.identifier == GO_TO_PROFILE_FROM_DASHBOARD_VC) {
+            
+            
         }
     }
 
@@ -215,5 +218,8 @@ class DashboardVC: UIViewController {
         })
     }
     
-
+    @IBAction func profileBtnPressed(_ sender: Any) {
+        performSegue(withIdentifier: GO_TO_PROFILE_FROM_DASHBOARD_VC, sender: nil)
+    }
+    
 }

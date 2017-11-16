@@ -194,7 +194,8 @@ class CreatePartyVC: UIViewController, UITextFieldDelegate, UITextViewDelegate, 
             "partyEndTime": datePickerEnd.text!,
             "partyDescription": descriptionTxtArea.text!,
             "partyImageUrl": imgUrl,
-            "publicParty": publicParty
+            "publicParty": publicParty,
+            "attendingUsers": [userKey: true]
         ]
         //create the party
         let firebaseParty = DataService.instance.REF_PARTIES.childByAutoId()

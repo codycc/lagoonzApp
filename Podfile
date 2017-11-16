@@ -10,6 +10,9 @@ target 'lagoonzProject' do
   pod 'Firebase/Database'
   pod 'SwiftKeychainWrapper'
   pod 'Kingfisher', '~> 3.0'
+  pod 'FBSDKCoreKit'
+  pod 'FBSDKShareKit'
+  pod 'FBSDKLoginKit'
 
   # Pods for lagoonzProject
 

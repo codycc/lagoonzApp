@@ -23,7 +23,7 @@ class PartyAttendingCell: UITableViewCell {
     
     func configureCell(party: Party) {
         //let imageUrl = URL(string: item.imageUrl)!
-        // self.itemImg.kf.setImage(with: imageUrl)
+        //self.itemImg.kf.setImage(with: imageUrl)
         print("\(party.partyName) here is party name from cell ")
         self.partyNameLbl.text = party.partyName
     }

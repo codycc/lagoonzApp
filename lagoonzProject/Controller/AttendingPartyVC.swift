@@ -30,6 +30,7 @@ class AttendingPartyVC: UIViewController {
     }
 
     @IBAction func attendingPartyTapped(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
         let partyKey = party.partyKey
         let userKey = DataService.instance.REF_CURRENT_USER.key
         DataService.instance.REF_PARTIES.child(partyKey).child("attendingUsers").child(userKey).setValue(true)
